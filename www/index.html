@@ -1,50 +1,72 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
-            https://cordova.apache.org/docs/en/latest/
-        Some notes:
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script src="cordova.js"></script>
-        <script src="js/index.js"></script>
-    </body>
+<head>
+  <title>My CV</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Michael Shodeinde</h1>
+    <p>Software Developer</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I am a skilled web developer with expertise in a variety of technologies and platforms, including HTML, CSS, JavaScript, i have gained and still gaining a wealth of experience designing and building web applications.</p>
+  </section>
+
+  <section class="education">
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <h3>Yaba College Of Technology</h3>
+        <p>Bachelor of Science in Computer Science</p>
+        <p>2020 - 2022</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="experience">
+    <h2>Work Experience</h2>
+    <ul>
+      <li>
+        <h3>Mars Web Design</h3>
+        <p>Web Developer/Social Media Manager</p>
+        <p>2020 - Present</p>
+        <ul>
+          <li>Developed and maintained web applications using HTML, CSS, and JavaScript.</li>
+          <li>Collaborated with cross-functional teams to deliver high-quality software products.</li>
+          <li>Implemented responsive designs and optimized web performance.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Bincom Academy</h3>
+        <p>Intern/Scholarship</p>
+        <p>2023- Present</p>
+        <ul>
+          <li>Learnt Mobile App Development</li>
+          <li>Gained experience with agile development methodologies.</li>
+          <li>Contributed to the development of a mobile application using React Native.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Node.js</li>
+    </ul>
+  </section>
+
+  <footer>
+     <p class="contact-message">Love coding as much as i do?  You can reach out to me and we can code together!</p>
+    <p class = "btn" href= "mailtomichaelshodeinde52@gmail.com" | Phone: 09026789497> </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
 </html>

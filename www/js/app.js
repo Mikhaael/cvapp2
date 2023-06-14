@@ -1,29 +1,41 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
-
-// Wait for the deviceready event before using any of Cordova's device APIs.
-// See https://cordova.apache.org/docs/en/latest/cordova/events/events.html#deviceready
-document.addEventListener('deviceready', onDeviceReady, false);
-
-function onDeviceReady() {
-    // Cordova is now initialized. Have fun!
-
-    console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
-    document.getElementById('deviceready').classList.add('ready');
-}
+// Function to toggle the visibility of sections
+function toggleSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    section.classList.toggle('hidden');
+  }
+  
+  // Function to show/hide the skills section based on a checkbox
+  function toggleSkills() {
+    var skillsSection = document.getElementById('skills');
+    var skillsCheckbox = document.getElementById('skills-checkbox');
+  
+    if (skillsCheckbox.checked) {
+      skillsSection.style.display = 'block';
+    } else {
+      skillsSection.style.display = 'none';
+    }
+  }
+  
+  // Event listener for clicking on the "About Me" section header
+  var aboutHeader = document.querySelector('.about h2');
+  aboutHeader.addEventListener('click', function () {
+    toggleSection('about');
+  });
+  
+  // Event listener for clicking on the "Education" section header
+  var educationHeader = document.querySelector('.education h2');
+  educationHeader.addEventListener('click', function () {
+    toggleSection('education');
+  });
+  
+  // Event listener for clicking on the "Work Experience" section header
+  var experienceHeader = document.querySelector('.experience h2');
+  experienceHeader.addEventListener('click', function () {
+    toggleSection('experience');
+  });
+  
+  // Event listener for the skills checkbox
+  var skillsCheckbox = document.getElementById('skills-checkbox');
+  skillsCheckbox.addEventListener('change', function () {
+    toggleSkills();
+  });
